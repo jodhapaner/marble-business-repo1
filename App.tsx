@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import MarbleCard from './components/MarbleCard';
 import Visualizer from './components/Visualizer';
-import AIConsultant from './components/AIConsultant';
 import { MARBLE_INVENTORY, SERVICES, VENDORS } from './data/inventory';
 import { Category, MarbleProduct } from './types';
 
@@ -75,7 +74,7 @@ const App: React.FC = () => {
               Browse Stone Art
             </button>
             <button className="bg-white text-slate-900 px-10 py-4 rounded-full font-bold border border-slate-200 hover:bg-slate-50 transition-all">
-              Consult with Bajrang Singh
+              Contact Bajrang Singh
             </button>
           </div>
         </div>
@@ -202,8 +201,6 @@ const App: React.FC = () => {
           </div>
         </div>
       </footer>
-
-      <AIConsultant />
     </div>
   );
 };
